@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ | MacConsultant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-blue: #3E5C77; 
+            --teal-accent: #668E94;
+            --soft-bg: #f9fbfd;
+            --card-bg: #ffffff;
+            --text-color: #333;
+        }
+
+        body { font-family: 'Inter', sans-serif; margin: 0; color: var(--text-color); line-height: 1.6; background-color: var(--soft-bg); }
+
+        header { padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; background: var(--card-bg); border-bottom: 1px solid #eef2f5; }
+        .logo-img { max-height: 40px; width: auto; } 
+        nav { font-weight: 600; font-size: 0.9rem; }
+        nav a { color: var(--main-blue); text-decoration: none; margin-left: 15px; }
+
+        .page-hero { padding: 40px 10%; text-align: center; background: linear-gradient(135deg, #f9fbfd 0%, #eef2f5 100%); }
+        h1 { color: var(--main-blue); font-size: 1.8rem; margin-bottom: 10px; }
+        .intro-text { color: #555; max-width: 600px; margin: 0 auto; font-size: 1rem; }
+
+        main { padding: 30px 10%; }
+        h2 { color: var(--teal-accent); font-size: 1.2rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+
+        /* Accordéon */
+        .faq-item { margin-bottom: 12px; background: var(--card-bg); border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.04); overflow: hidden; transition: 0.3s; }
+        .faq-item:hover { box-shadow: 0 4px 8px rgba(0,0,0,0.08); }
+        .faq-summary { padding: 14px 20px; cursor: pointer; font-weight: 600; color: var(--main-blue); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem; }
+        .faq-summary::-webkit-details-marker { display: none; }
+        .faq-summary:after { content: '+'; font-size: 1.2rem; color: var(--teal-accent); font-weight: 300; }
+        details[open] .faq-summary { border-bottom: 1px solid #f0f0f0; }
+        details[open] .faq-summary:after { content: '×'; }
+        .faq-content { padding: 12px 20px; color: #666; font-size: 0.9rem; }
+
+        /* Bouton CTA */
+        .cta-container { margin-top: 25px; text-align: center; }
+        .cta-button { display: inline-block; padding: 12px 25px; background-color: var(--main-blue); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: background 0.3s, transform 0.2s; }
+        .cta-button:hover { background-color: var(--teal-accent); transform: translateY(-2px); }
+
+        /* Services */
+        .services-section { margin-top: 40px; }
+        .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .service-card { background: var(--card-bg); padding: 20px; border-radius: 8px; border-left: 4px solid var(--teal-accent); box-shadow: 0 2px 6px rgba(0,0,0,0.04); }
+        .service-card h3 { margin-top: 0; color: var(--main-blue); font-size: 0.95rem; }
+        .service-card ul { padding-left: 18px; margin: 0; color: #555; font-size: 0.9rem; }
+
+        footer { background: #222; color: #888; text-align: center; padding: 30px; font-size: 0.8rem; margin-top: 40px; }
+
+        @media (max-width: 900px) { .faq-grid, .services-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="MacC.png" alt="MacConsultant Logo" class="logo-img">
+    <nav>
+        <a href="index.html" onclick="localStorage.setItem('languePreferee', 'fr')">Français</a> | 
+        <a href="index-en.html" onclick="localStorage.setItem('languePreferee', 'en')">English</a> | 
+        <a href="faq.html">FAQ</a>
+    </nav>
+</header>
+
+<div class="page-hero">
+    <h1>Questions fréquentes / Frequently Asked Questions</h1>
+    <p class="intro-text">Nous sommes là pour vous simplifier la vie numérique. Vous trouverez ici les réponses aux questions les plus courantes.</p>
+</div>
+
+<main>
+    <div class="faq-grid">
+        <div class="faq-col">
+            <h2>Français</h2>
+            <details class="faq-item">
+                <summary class="faq-summary">Comment savoir si vos services correspondent à mes besoins ?</summary>
+                <div class="faq-content">Chez MacConsultant, nous offrons un accompagnement personnalisé. Que vous soyez une petite entreprise, un indépendant ou un particulier, nous commençons toujours par un premier échange pour évaluer votre situation.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">Chargez-vous des frais de déplacement ?</summary>
+                <div class="faq-content">0$ ! Les déplacements sont sans frais dans un rayon d'environ 30 minutes du centre-ville de Montréal ou de Saint-Sauveur. Au-delà, contactez-nous et nous trouverons une solution ensemble.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">Proposez-vous des banques d'heures ?</summary>
+                <div class="faq-content">Oui ! Nous avons des forfaits à tarifs dégressifs très avantageux. Nous proposons aussi des contrats de maintenance pour un suivi régulier et sans surprise.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">Où êtes-vous situés ?</summary>
+                <div class="faq-content">Nous avons des bureaux administratifs à Montréal et dans les Laurentides, mais notre service est mobile : nous nous déplaçons directement chez vous.</div>
+            </details>
+            <div class="cta-container">
+                <a href="index.html#contact" class="cta-button">Contactez-nous</a>
+            </div>
+        </div>
+
+        <div class="faq-col">
+            <h2>English</h2>
+            <details class="faq-item">
+                <summary class="faq-summary">How do I know if your services are right for me?</summary>
+                <div class="faq-content">At MacConsultant, we offer personalized support. Whether you're a small business, an independent professional, or a private user, we always start with a free initial consultation.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">Do you charge travel fees?</summary>
+                <div class="faq-content">$0 ! There are no travel fees within approximately 30 minutes of downtown Montreal or Saint-Sauveur. If you're further out, let's talk and find a solution that works for you.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">Do you offer hourly packages?</summary>
+                <div class="faq-content">Absolutely! We offer discounted rates for hourly bundles. We also provide maintenance contracts to ensure consistent, stress-free support for your business.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">Where are you located?</summary>
+                <div class="faq-content">We have administrative offices in Montreal and the Laurentians. However, we are a mobile team—we come to you wherever you are.</div>
+            </details>
+            <div class="cta-container">
+                <a href="index-en.html#contact" class="cta-button">Contact us</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="services-section">
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Nos services les plus demandés</h3>
+                <ul>
+                    <li>Support Apple pour entreprises</li>
+                    <li>Gestion de parc informatique</li>
+                    <li>Assistance AppleCare indépendante</li>
+                    <li>Configuration MDM (Jamf, etc.)</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Our most requested services</h3>
+                <ul>
+                    <li>Apple IT support for businesses</li>
+                    <li>Apple fleet management</li>
+                    <li>Independent AppleCare assistance</li>
+                    <li>MDM configuration (Jamf, etc.)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>MacConsultant | Montréal & Laurentides © 2012-2026<br>Services spécialisés sur l'écosystème Apple</p>
+</footer>
+
+<script>
+    const details = document.querySelectorAll('.faq-item');
+    details.forEach((targetDetail) => {
+        targetDetail.addEventListener('toggle', (e) => {
+            if (targetDetail.open) {
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute('open');
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

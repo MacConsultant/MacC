@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacConsultant | Support Apple Montréal</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header, section, footer { padding: 40px 10%; }
+        
+        /* Header */
+        header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+        .logo { font-weight: bold; font-size: 1.5rem; color: #000; }
+        
+        /* Sections */
+        .hero { display: flex; gap: 40px; align-items: center; min-height: 60vh; }
+        .hero-content { flex: 2; }
+        .hero-image { flex: 1; text-align: center; }
+        
+        /* Angled Dividers (Zig-Zag) */
+        .section-zigzag {
+            background: #f8f9fa;
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+            padding: 100px 10%;
+            margin: -50px 0;
+        }
+
+        /* Grid */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        
+        /* Utilities */
+        button { background: #007bff; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; font-size: 1rem; }
+        footer { background: #222; color: #ccc; text-align: center; margin-top: 50px; }
+        
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MacConsultant</div>
+    <nav>Français | English | FAQ</nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Services pro - support et infrastructure Apple</h1>
+            <p>MacConsultant est une entreprise individuelle basée à Montréal, offrant des services de consultation, de support et d'intervention technique pour les environnements Apple.</p>
+            <button>Suivant</button>
+        </div>
+        <div class="hero-image">
+            <div style="width: 150px; height: 150px; background: #ccc; border-radius: 50%; margin: 0 auto;"></div>
+            <p><strong>Frédéric Hadi</strong><br>Consultant principal</p>
+        </div>
+    </section>
+
+    <section class="section-zigzag">
+        <h2>1. L'intérêt</h2>
+        <p>Que vous soyez une entreprise ou un établissement scolaire...</p>
+    </section>
+
+    <section>
+        <h2>2. La crédibilité</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Clients majeurs</h3>
+                <p>Liste de vos partenaires...</p>
+            </div>
+            <div class="card">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Apple Certified Support Professional</li>
+                    <li>Apple Certified System Administrator</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-zigzag">
+        <h2>3. La confiance</h2>
+        <p>Je vous propose une rencontre à 0$ "de confiance", pour évaluer ce que je peux vous apporter.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Formulaire de contact à ajouter ici.</p>
+    </section>
+</main>
+
+<footer>
+    <p>MacConsultant | Montréal © 2012-2026</p>
+</footer>
+
+</body>
+</html>

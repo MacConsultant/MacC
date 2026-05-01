@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Expert consultant Apple à Montréal et dans les Laurentides. Services de gestion de parc (JAMF), support informatique, et conseil stratégique pour PME, écoles et entreprises. Demandez votre rencontre gratuite.">
+
+<meta property="og:title" content="MacConsultant | Support Apple Montréal & Laurentides">
+<meta property="og:description" content="Solutions informatiques Apple pour PME et éducation. Expertise en gestion de parc, sécurité et optimisation à Montréal et dans les Laurentides.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.macconsultant.ca">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MacConsultant",
+  "description": "Services de consultation et support informatique Apple pour PME, établissements scolaires et entreprises à Montréal et dans les Laurentides.",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 45.5017, "longitude": -73.5673 },
+    "geoRadius": "100km"
+  },
+  "url": "https://www.macconsultant.ca"
+}
+</script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>MacConsultant | Support Apple Montréal & Laurentides</title>
+    <style>
+        :root {
+    --main-blue: #3E5C77; 
+    --teal-accent: #668E94;
+    --light-bg: #f9f9f9;
+    --white: #ffffff;
+    --text-color: #333;
+}
+
+body { font-family: 'Inter', sans-serif; margin: 0; color: var(--text-color); line-height: 1.7; }
+
+header { 
+    padding: 25px 10%;          /* Réduit de 30px à 15px pour rapprocher les éléments */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: var(--white);
+    border-bottom: 1px solid #e0e0e0; /* Ajoute une ligne de délimitation très fine et élégante */
+}
+.logo-img { max-height: 45px; width: auto; } 
+nav { color: var(--main-blue); font-weight: 500; font-size: 0.9rem; }
+
+section { padding: 80px 10%; }
+h2 { color: var(--main-blue); font-size: 2.2rem; margin-bottom: 25px; }
+
+/* Hero */
+/* Si nécessaire, réduisez aussi le padding haut de la section hero */
+.hero { 
+    padding-top: 10px; 
+    display: flex; 
+    gap: 10px; /* Réduit de 50px à 20px pour gagner de la place */
+    align-items: center; 
+    background: var(--white); 
+}
+.hero-content { flex: 1.5; } /* Légèrement plus large pour accommoder le titre */
+.hero-content { 
+    flex: 0 1 auto;        /* Le contenu prendra juste la place nécessaire */
+    max-width: 750px;      /* Vous pouvez limiter la largeur du texte si besoin */
+}
+
+.hero-headline { font-size: 2.8rem; color: var(--main-blue); line-height: 1.1; margin-bottom: 25px; }
+
+.enhanced-text {
+    font-size: 1.1rem;    /* Agrandit la taille du texte */
+    line-height: 1.7;      /* Aère le texte pour une lecture fluide */
+    color: #333;           /* Garantit une excellente lisibilité */
+}
+
+/* Photo & Profil */
+
+.hero-image { flex: 1; text-align: right; } 
+
+.profile-photo { 
+    width: 220px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Permet à la hauteur de s'adapter automatiquement pour garder les proportions */
+    display: block; 
+    margin: 0 auto;
+}
+
+.apple-cert-logo { 
+    max-width: 150px; /* Taille réduite */
+    height: auto; 
+    border: none; 
+    border-radius: 0; 
+    margin-bottom: 20px;
+}
+
+.profile-text { margin-top: 15px; line-height: 1.4; }
+.profile-name { font-weight: bold; color: var(--teal-accent); font-size: 1.2rem; display: block; margin-bottom: 3px; }
+.profile-title { display: block; font-size: 0.8rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px; }
+.profile-subtext { font-weight: normal; font-size: 0.95em; color: #666; }
+
+/* Process */
+.process-wrapper { margin-top: 30px; background: #fff; padding: 20px; border-radius: 12px; border: 1px solid #eee; }
+.process-grid { display: flex; gap: 20px; margin-top: 15px; }
+.process-step { flex: 1; border-top: 3px solid var(--teal-accent); padding-top: 10px; }
+.step-num { display: block; font-size: 0.8rem; color: #888; font-weight: bold; margin-bottom: 5px; }
+.process-step strong { color: var(--main-blue); display: block; margin-bottom: 5px; }
+.process-step p { font-size: 0.9rem; color: #666; margin: 0; }
+
+/* Certifications (Accordéon) */
+.cert-item { margin-bottom: 10px; border: 1px solid #e0e0e0; border-radius: 8px; background: white; transition: 0.3s; }
+.cert-item:hover { border-color: var(--teal-accent); }
+.cert-summary { padding: 15px; cursor: pointer; font-weight: 600; color: var(--main-blue); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.cert-summary::-webkit-details-marker { display: none; }
+.cert-summary:after { content: '+'; font-size: 1.5rem; color: var(--teal-accent); transition: 0.3s; }
+details[open] .cert-summary:after { content: '-'; transform: rotate(180deg); }
+.cert-content { padding: 0 15px 15px 15px; color: #555; font-size: 0.95rem; line-height: 1.5; border-top: 1px solid #f4f4f4; padding-top: 10px; }
+
+/* Grille crédibilité */
+.cred-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; align-items: start; }
+.logos-container { display: flex; flex-wrap: wrap; gap: 25px; align-items: center; }
+.logo-wrapper { display: flex; align-items: center; justify-content: center; height: 60px; width: 140px; opacity: 0.8; transition: 0.3s; }
+.logo-wrapper:hover { opacity: 1; }
+.client-logo { max-height: 100%; max-width: 100%; object-fit: contain; }
+
+/* Cartes (Services & Tarifs) */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.card { 
+    background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #eee; 
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease; 
+}
+.card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-color: var(--teal-accent); }
+.card h3 { color: var(--main-blue); margin-top: 0; border-bottom: 2px solid var(--teal-accent); padding-bottom: 10px; display: inline-block; }
+.price { font-size: 2rem; font-weight: 700; color: var(--teal-accent); margin-top: 20px; text-align: center; }
+.card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; }
+.card-icon { width: 30px; height: 30px; fill: var(--teal-accent); }
+
+/* Zig-Zag */
+.zigzag-dark { background: var(--main-blue); color: white; clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%); padding-bottom: 120px;}
+.zigzag-dark h2, .zigzag-dark p { color: white; }
+
+/* Contact */
+form { display: flex; flex-direction: column; gap: 20px; max-width: 600px; margin: 0 auto; }
+input, textarea { padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; font-size: 1rem; }
+input, textarea, select { 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    font-family: inherit; 
+    font-size: 1rem; 
+    width: 100%; /* S'assure que le champ prend toute la largeur */
+}
+button { background: var(--main-blue); color: white; border: none; padding: 18px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1rem; transition: 0.3s; }
+button:hover { background: var(--teal-accent); }
+
+footer { background: #222; color: #888; text-align: center; padding: 50px; font-size: 0.85rem; }
+
+@media (max-width: 900px) { 
+    .hero, .cred-grid { flex-direction: column; grid-template-columns: 1fr; text-align: center; } 
+    .zigzag-dark { clip-path: none; margin: 0; padding: 60px 10%; } 
+}
+@media (max-width: 768px) {
+    .process-grid { flex-direction: column; gap: 15px; }
+}
+    </style>
+
+    <script>
+    const pref = localStorage.getItem('languePreferee');
+
+    // 1. Si l'utilisateur a explicitement choisi l'anglais, on le redirige
+    if (pref === 'en') {
+        window.location.href = 'index-en.html';
+    } 
+    // 2. Si AUCUN choix n'a été fait (c'est la première visite) et que le navigateur est en anglais
+    else if (!pref && navigator.language.startsWith('en')) {
+        window.location.href = 'index-en.html';
+    }
+</script>
+</head>
+<body>
+
+<header>
+    <img src="MacC.png" alt="MacConsultant Logo" class="logo-img">
+    <nav style="font-weight: 500; font-size: 0.9rem;">
+        <a href="index.html" style="color: var(--main-blue); text-decoration: none;" onclick="localStorage.setItem('languePreferee', 'fr')">Français</a> | 
+        <a href="index-en.html" style="color: var(--main-blue); text-decoration: none;" onclick="localStorage.setItem('languePreferee', 'en')">English</a> | 
+        <a href="faq.html" style="color: var(--main-blue); text-decoration: none;">FAQ</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-headline">Votre partenaire Apple à Montréal et dans les Laurentides.</h1>
+        
+        <div class="hero-text enhanced-text">
+            <p ><strong>MacConsultant</strong> redéfinit le support informatique pour les PME, les écoles et les professionnels exigeants. Basés à Montréal et actifs dans les Laurentides, nous transformons vos défis techniques en leviers de croissance.</p>
+            <p>Nos clients types sont les PME et les établissements scolaires, mais nous aidons également les travailleurs indépendants et conseillons les grandes entreprises. <em>Nous vous écoutons, analysons et partageons, mais nous n'hésitons pas non plus à mettre la main à la pâte.</em></p>
+        </div>
+
+        <div class="process-wrapper">
+            <h3>Notre approche collaborative en 3 étapes :</h3>
+            <div class="process-grid">
+                <div class="process-step">
+                    <span class="step-num">01</span>
+                    <strong>L’intérêt</strong>
+                    <p>Analyser vos besoins réels.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">02</span>
+                    <strong>La crédibilité</strong>
+                    <p>Démontrer notre expertise.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">03</span>
+                    <strong>La confiance</strong>
+                    <p>Bâtir une relation durable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image" style="display: flex; flex-direction: column; align-items: flex-end; text-align: right; padding: 35px">
+    
+    <img src="Pro+Cert+2.2.png" alt="Apple Certified" style="width: 150px; margin-bottom: 15px;">
+    
+    <img src="Frederic Hadi.png" alt="Frédéric Hadi" style="width: 220px; display: block; margin-bottom: 15px;">
+    
+    <div class="profile-text" style="margin-top: 0;">
+        <span class="profile-name" style="display: block; font-weight: bold; color: #668E94; font-size: 1.2rem; margin-bottom: 3px;">Frédéric Hadi</span>
+        <span class="profile-title" style="display: block; font-size: 0.8rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Consultant principal</span>
+        <span class="profile-subtext" style="display: block; font-size: 0.95em; color: #666;">Montréalais d'adoption</span>
+    </div>
+</div>
+</section>
+
+    <section class="zigzag-dark arrow-bottom">
+        <h2>1. L'intérêt : Optimiser votre environnement</h2>
+        <p class="enhanced-text">Dans un écosystème technologique qui évolue vite, vos outils Apple doivent être des vecteurs de performance. Mon rôle est d'aligner votre infrastructure sur vos besoins réels. Que vous soyez une PME ou un établissement scolaire, j'optimise votre parc, renforce la sécurité de vos données et fluidifie vos flux de travail pour garantir une stabilité opérationnelle totale.</p>
+    </section>
+
+    <section class="credibility-section">
+    <h2>2. La crédibilité : Une expertise éprouvée</h2>
+    
+    <div class="cred-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 60px; align-items: start;">
+        
+        <div class="col-left">
+            <p class="enhanced-text" style="margin-bottom: 40px;">Chez MacConsultant, nous comptons plus de <strong>20 ans d’expérience</strong> dans l’univers Apple. Notre force repose sur une polyvalence rare : administration de systèmes, serveurs, support technique AppleCare, techniciens en centres agréés, support entreprise (Dell), et expérience Apple Genius.</p>
+            
+            <p style="font-weight:bold; margin-bottom:20px;">Ils nous ont fait confiance :</p>
+            <div class="logos-container">
+                <a href="https://www.petal-health.com" target="_blank" class="logo-wrapper"><img src="https://www.petal-health.com/wp-content/uploads/2025/09/main_logo.svg" alt="Petal" class="client-logo"></a>
+                <a href="https://cegepmv.ca/" target="_blank" class="logo-wrapper"><img src="https://d3v2l0729gt15o.cloudfront.net/Logos/Vert-forêt.png" alt="Cégep" class="client-logo"></a>
+                <a href="https://cdn.cogecolive.com/" target="_blank" class="logo-wrapper"><img src="https://cdn.cogecolive.com/websites-public/COGECO_Media_Logo_RGB.svg" alt="Cogeco" class="client-logo"></a>
+                <a href="https://www.cvm.qc.ca/" target="_blank" class="logo-wrapper"><img src="https://www.cvm.qc.ca/wp-content/themes/cvm/dist/img/logos/logo-cvm.svg" alt="CVM" class="client-logo"></a>
+                <a href="https://maisonjeanlapointe.org" target="_blank" class="logo-wrapper"><img src="https://maisonjeanlapointe.org/wp-content/uploads/2021/10/Logo.svg" alt="Maison Jean Lapointe" class="client-logo"></a>
+                <a href="https://www.emsb.qc.ca" target="_blank" class="logo-wrapper"><img src="https://cdn.aglty.io/emsb/emsb-website/common/img/header-footer/emsb-logo-header.svg" alt="EMSB" class="client-logo"></a>
+                <a href="https://www.lacaisse.com" target="_blank" class="logo-wrapper"><img src="https://www.lacaisse.com/sites/default/files/medias/img/logo/LaCaisse_Logo_Noir.svg" alt="La Caisse" class="client-logo"></a>
+                <a href="https://www.cirquedusoleil.com" target="_blank" class="logo-wrapper"><img src="https://www.cirquedusoleil.com/-/media/feature/components/contextual-navigation/logos/cds_digital_v_darkback_rgb_footer.svg" alt="Cirque du Soleil" class="client-logo"></a>
+            </div>
+        </div>
+
+        <div class="col-right">
+            <h3>Certifications</h3>
+            <div class="cert-container">
+                <details class="cert-item"><summary class="cert-summary">Certifié JAMF</summary><div class="cert-content">Gestion de parc Apple et appareils mobiles par la plateforme MDM JAMF.</div></details>
+                <details class="cert-item"><summary class="cert-summary"> Certified System Administrator</summary><div class="cert-content">La certification macOS la plus prestigieuse d’Apple pour environnements complexes et multi-plateformes.</div></details>
+                <details class="cert-item"><summary class="cert-summary"> Mobility Technical Competency</summary><div class="cert-content">Capacité à configurer macOS Server pour un accès sécurisé aux ressources internes.</div></details>
+                <details class="cert-item"><summary class="cert-summary"> Certified Support Professional</summary><div class="cert-content">Expertise en fonctionnalités macOS, dépannage et prise en charge multi-utilisateurs.</div></details>
+                <details class="cert-item"><summary class="cert-summary"> Apple Genius</summary><div class="cert-content">Validation des compétences techniques et relationnelles Apple.</div></details>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.cert-item').forEach((el) => {
+        el.addEventListener('click', (e) => {
+            // On ferme toutes les autres sections
+            document.querySelectorAll('.cert-item').forEach((other) => {
+                if (other !== el) other.removeAttribute('open');
+            });
+        });
+    });
+</script>
+
+    <section class="zigzag-dark">
+        <h2>3. La confiance : Une approche humaine</h2>
+        <p class="enhanced-text">La confiance se bâtit par les résultats. Avant tout engagement, je vous propose une rencontre exploratoire gratuite. C'est l'occasion d'échanger sur vos défis actuels. Cette rencontre nous permet de valider une vision commune avant que vous n'investissiez le moindre dollar. Votre tranquillité d'esprit est notre priorité.</p>
+    </section>
+
+    <section style="background: var(--light-bg);">
+    <h2 style="text-align: center;">Nos services spécialisés</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">De la planification stratégique à l'intervention technique, nous couvrons tout le spectre de votre environnement Apple.</p>
+    
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-header">
+                <svg class="card-icon" viewBox="0 0 24 24"><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>
+                <h3>Audit & Vision</h3>
+            </div>
+            <p>Bien plus qu'un simple diagnostic. Nous analysons vos processus pour aligner vos outils Apple sur vos objectifs d'affaires réels.</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <svg class="card-icon" viewBox="0 0 24 24"><path d="M4,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V4A2,2 0 0,1 4,2M4,4V8H20V4H4M4,10V14H8V10H4M10,10V14H14V10H10M16,10V14H20V10H16M4,16V20H8V16H4M10,16V20H20V16H10Z"/></svg>
+                <h3>Infrastructure & MDM</h3>
+            </div>
+            <p>Déploiement, sécurité et gestion de parc (JAMF/MDM). Une infrastructure robuste, invisible et parfaitement optimisée pour vos équipes.</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <svg class="card-icon" viewBox="0 0 24 24"><path d="M18.5,1.5H5.5A2,2 0 0,0 3.5,3.5V20.5A2,2 0 0,0 5.5,22.5H18.5A2,2 0 0,0 20.5,20.5V3.5A2,2 0 0,0 18.5,1.5M12,21A1,1 0 0,1 11,20A1,1 0 0,1 12,19A1,1 0 0,1 13,20A1,1 0 0,1 12,21M18,17H6V4H18V17Z"/></svg>
+                <h3>Mobilité & Cloud</h3>
+            </div>
+            <p>Libérez le plein potentiel du travail hybride. Synchronisation fluide, accès sécurisé et migrations vers le Cloud simplifiées.</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <svg class="card-icon" viewBox="0 0 24 24"><path d="M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M11,7H13V13H11V7M11,15H13V17H11V15Z"/></svg>
+                <h3>Support & Intervention</h3>
+            </div>
+            <p>L'approche "mains à la pâte". Installation, maintenance, mises à jour : nous intervenons directement pour régler vos pépins techniques.</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <svg class="card-icon" viewBox="0 0 24 24"><path d="M12,3L1,9L12,15L21.8,9.67V17H23.8V9L12,3M12,5.1L19.5,9.3L12,13.5L4.5,9.3L12,5.1M5,13.15V17.1L12,21L19,17.1V13.15L12,17L5,13.15Z"/></svg>
+                <h3>Écosystème Scolaire</h3>
+            </div>
+            <p>Accompagnement des écoles pour faire de l'iPad et du Mac des alliés de la pédagogie, incluant la gestion de classe et le multi-utilisateurs.</p>
+        </div>
+    </div>
+</section>
+
+    <section>
+        <h2>Tarifs d'accompagnement</h2>
+        <div class="card-grid">
+            <div class="card" style="text-align: center;"><h3>Travailleur autonome</h3><p>Besoin ponctuel, conseils ou résolution de problèmes.</p><div class="price">90$/h</div></div>
+            <div class="card" style="text-align: center;"><h3>Éducation et PME</h3><p>Solutions pour besoins ponctuels et gestion quotidienne.</p><div class="price">120$/h</div></div>
+            <div class="card" style="text-align: center;"><h3>Grandes entreprises</h3><p>Consultation, implantation et meilleures pratiques.</p><div class="price">150$/h</div></div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" style="background: #fdfdfd;">
+        <h2 style="text-align: center;">Discutons de vos projets</h2>
+        <form action="https://formspree.io/f/maqvnelw" method="POST">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre courriel" required>
+
+            <label for="profil" style="font-weight: bold; margin-bottom: 5px;">Votre profil :</label>
+<select name="profil" id="profil" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; font-size: 1rem; background: white;">
+    <option value="" disabled selected>-- Sélectionnez votre profil --</option>
+    <option value="travailleur-autonome">Travailleur autonome</option>
+    <option value="education">Éducation</option>
+    <option value="pme">PME</option>
+    <option value="grande-entreprise">Grande entreprise</option>
+</select>
+
+            <textarea name="message" rows="5" placeholder="Parlez-nous de vos besoins..." required></textarea>
+            <button type="submit">Envoyer votre demande</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>MacConsultant | Montréal & Laurentides © 2012-2026<br>Services spécialisés sur l'écosystème Apple</p>
+</footer>
+
+</body>
+</html>
